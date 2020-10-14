@@ -1,0 +1,215 @@
+
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="5"
+    android:rowCount="10"
+    android:id="@+id/gridLayout1"
+    android:background="@mipmap/wood1"
+    android:fitsSystemWindows="true">
+    <TextView
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="Tarif:"
+        android:layout_columnSpan="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtTarif"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffffff" />
+    <EditText
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:inputType="numberSigned"
+        android:layout_columnSpan="2"
+        android:id="@+id/varTarifSau"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="10"
+        android:layout_gravity="center"
+        android:textColor="#ff000000"
+        android:background="#ffffffff"
+        android:textSize="20dp" />
+    <EditText
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:inputType="numberSigned"
+        android:layout_columnSpan="2"
+        android:id="@+id/varTarifSolo"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="20"
+        android:layout_gravity="center"
+        android:textColor="#ff000000"
+        android:background="#ffffffff"
+        android:textSize="20dp" />
+    <RadioGroup
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/radioGroup1"
+        android:orientation="horizontal"
+        android:layout_columnSpan="5"
+        android:layout_gravity="bottom|center"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <RadioButton
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Sauspiel"
+            android:id="@+id/rbtn_sau"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#ffffffff"
+            android:buttonTint="#ffffffff"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Solo"
+            android:layout_gravity="center"
+            android:id="@+id/rbtn_solo"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:buttonTint="#ffffffff"
+            android:textColor="#ffffffff"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Tout"
+            android:id="@+id/rbtn_Tout"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="#ffffffff"
+            android:textStyle="normal"
+            android:buttonTint="#ffffffff"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="Doppler:"
+        android:layout_columnSpan="1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_gravity="center"
+        android:id="@+id/txtDoppler"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffffff" />
+    <SeekBar
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/seekBarDoppler"
+        android:layout_columnSpan="3"
+        android:layout_height="wrap_content"
+        android:max="6"
+        android:layout_width="wrap_content"/>
+    <TextView
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="0"
+        android:layout_columnSpan="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_gravity="center"
+        android:id="@+id/varDoppler"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffffff"
+        android:textSize="20dp" />
+    <CheckBox
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="Schneider"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center"
+        android:id="@+id/chkb_Schneider"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:buttonTint="#ffffffff"
+        android:textColor="#ffffffff"
+        android:textSize="20dp" />
+    <CheckBox
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="Schwarz"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center"
+        android:id="@+id/chkb_Schwarz"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffffff"
+        android:buttonTint="#ffffffff"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="Lauf:"
+        android:layout_columnSpan="1"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtLauf"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffffff" />
+    <SeekBar
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:id="@+id/seekBarLauf"
+        android:layout_columnSpan="3"
+        android:layout_height="wrap_content"
+        android:max="12"
+        android:min="0"
+        android:layout_width="280dp" />
+    <TextView
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="0"
+        android:layout_columnSpan="1"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/varLauf"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffffff"
+        android:textSize="20dp" />
+    <Button
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="Berechnen"
+        android:layout_columnSpan="5"
+        android:layout_rowSpan="2"
+        android:id="@+id/btnBerechnen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:textColor="#ff000000" />
+    <TextView
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="Betrag:"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtBetrag"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffffff" />
+    <TextView
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="0"
+        android:layout_columnSpan="4"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/varBetrag"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffffff" />
+</GridLayout>
